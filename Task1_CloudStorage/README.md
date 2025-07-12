@@ -45,7 +45,7 @@ The following files were uploaded to the S3 bucket:
 
 ---
 
-##  Screenshots (Uploaded Separately):
+##  Screenshots:
 - `s3-bucket-overview.png` – Bucket list and access status
 - `s3-file-uploads.png` – Uploaded object list
 - `s3-policy-setting.png` – policy settings
