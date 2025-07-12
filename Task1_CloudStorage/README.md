@@ -58,6 +58,6 @@ A fully functional S3 bucket was created and configured with public read access 
 
 ---
 
-## 🛠 Tools Used:
+##  Tools Used:
 - AWS Management Console (S3)
 - Web browser (to verify public URLs)
