@@ -8,7 +8,7 @@ To create and configure a secure and functional cloud storage system using Amazo
 ##  Implementation Details:
 
 ###  S3 Bucket:
-- **Bucket Name**: `secure-storage-nandini`
+- **Bucket Name**: `codetech-internship-bucket`
 - **Region**: `ap-south-1` (Mumbai)
 - **Public Access**: Partially enabled via bucket policy to allow public read access to objects
 - **Versioning**: Disabled
