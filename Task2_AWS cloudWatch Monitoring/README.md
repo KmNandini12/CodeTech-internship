@@ -24,25 +24,25 @@ To configure basic monitoring on an EC2 instance using AWS CloudWatch and demons
 ## Screenshots
 
 ### 1. CloudWatch Dashboard
-![Dashboard](Dashboard.png)
+'Dashboard.png'[Dashboard]
 
 ### 2. Alarm Details (Threshold breached)
-![Alarm Details](Alarm_details.png)
+'Alarm_details.png'[Alarm Details]
 
 ### 3. Alarm Notification Email
-![Alarm Mail](Alarm_mail.png)
+'Alarm_mail.png'[Alarm Mail]
 
 ### 4. EC2 Terminal - Before installing stress
-![CLI1](CLI1.png)
+'CLI1.png'[CLI1]
 
 ### 5. EC2 Terminal - Installing stress
-![CLI2](CLI2.png)
+'CLI2.png'[CLI2]
 
 ### 6. EC2 Terminal - stress command running
-![CLI4](CLI4.png)
+'CLI4.png'[CLI4]
 
 ### 7. CloudWatch Dashboard (alarm in triggered state)
-![Dashboard 2](dashboard2.png)
+'dashboard2.png'[Dashboard 2]
 
 ## Outcome
 
