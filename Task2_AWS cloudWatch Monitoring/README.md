@@ -23,26 +23,26 @@ To configure basic monitoring on an EC2 instance using AWS CloudWatch and demons
 
 ## Screenshots
 
-### 1. CloudWatch Dashboard
-'Dashboard.png'[Dashboard]
+Dashboard.png –
+Displays the CloudWatch dashboard with real-time metrics for the EC2 instance, including CPUUtilization, CPUCreditUsage, and NetworkOut.
 
-### 2. Alarm Details (Threshold breached)
-'Alarm_details.png'[Alarm Details]
+dashboard2.png –
+Shows the dashboard when the CPUUtilization alarm is in triggered state, confirming that the alarm activated successfully under load.
 
-### 3. Alarm Notification Email
-'Alarm_mail.png'[Alarm Mail]
+Alarm_details.png –
+Contains the full alarm configuration including metric name, threshold value (15%), evaluation period, and SNS topic for alert delivery.
 
-### 4. EC2 Terminal - Before installing stress
-'CLI1.png'[CLI1]
+Alarm_mail.png –
+Screenshot of the email notification received from Amazon SNS when the alarm is triggered, proving that the alert mechanism is working.
 
-### 5. EC2 Terminal - Installing stress
-'CLI2.png'[CLI2]
+CLI1.png –
+Initial terminal output after connecting to the EC2 instance, used to verify access and prepare the environment for stress testing.
 
-### 6. EC2 Terminal - stress command running
-'CLI4.png'[CLI4]
+CLI2.png –
+Shows successful installation of the stress utility using apt, required to simulate high CPU usage on the instance.
 
-### 7. CloudWatch Dashboard (alarm in triggered state)
-'dashboard2.png'[Dashboard 2]
+CLI4.png –
+Output of the command stress --cpu 2 --timeout 60, used to artificially raise CPU utilization and trigger the CloudWatch alarm.
 
 ## Outcome
 
