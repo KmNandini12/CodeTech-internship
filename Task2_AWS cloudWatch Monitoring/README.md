@@ -23,26 +23,27 @@ To configure basic monitoring on an EC2 instance using AWS CloudWatch and demons
 
 ## Screenshots
 
-Dashboard.png –
-Displays the CloudWatch dashboard with real-time metrics for the EC2 instance, including CPUUtilization, CPUCreditUsage, and NetworkOut.
+- `Dashboard.png` –  
+  Displays the CloudWatch dashboard with real-time metrics for the EC2 instance, including `CPUUtilization`, `CPUCreditUsage`, and `NetworkOut`.
 
-dashboard2.png –
-Shows the dashboard when the CPUUtilization alarm is in triggered state, confirming that the alarm activated successfully under load.
+- `dashboard2.png` –  
+  Shows the dashboard when the `CPUUtilization` alarm is in triggered state, confirming that the alarm activated successfully under load.
 
-Alarm_details.png –
-Contains the full alarm configuration including metric name, threshold value (15%), evaluation period, and SNS topic for alert delivery.
+- `Alarm_details.png` –  
+  Contains the full alarm configuration including metric name, threshold value (`15%`), evaluation period, and SNS topic for alert delivery.
 
-Alarm_mail.png –
-Screenshot of the email notification received from Amazon SNS when the alarm is triggered, proving that the alert mechanism is working.
+- `Alarm_mail.png` –  
+  Screenshot of the **email notification** received from Amazon SNS when the alarm is triggered, verifying the alert mechanism.
 
-CLI1.png –
-Initial terminal output after connecting to the EC2 instance, used to verify access and prepare the environment for stress testing.
+- `CLI1.png` –  
+  Initial terminal session showing EC2 instance connection, verifying SSH access before setting up monitoring tools.
 
-CLI2.png –
-Shows successful installation of the stress utility using apt, required to simulate high CPU usage on the instance.
+- `CLI2.png` –  
+  Terminal output of installing the `stress` utility using `sudo apt install stress` to simulate high CPU load.
 
-CLI4.png –
-Output of the command stress --cpu 2 --timeout 60, used to artificially raise CPU utilization and trigger the CloudWatch alarm.
+- `CLI4.png` –  
+  Running the `stress` command (`--cpu 2 --timeout 60`) to generate CPU usage and trigger the alarm for testing purposes.
+
 
 ## Outcome
 
@@ -52,7 +53,7 @@ This task demonstrated real-time monitoring of AWS EC2 resources using CloudWatc
 
 - CloudWatch dashboard screenshots
 - Alarm configuration and triggered state
-- Email alert proof
+- Email alert 
 - EC2 setup and stress testing screenshots
 
 
