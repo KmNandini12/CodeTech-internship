@@ -68,21 +68,24 @@ The objective of Task 4 is to implement a secure cloud storage system using **Am
 
 ## Problems Faced and Resolutions
 
-**`Access Denied when listing bucket`** (IAM user couldn’t see objects in the bucket): 
- 
-  &#8728; Added `s3:ListBucket` permission to the policy.
-  
-**`Object not accessible via URL`** (Even after upload, public access was denied):
+**&#8728; `Access Denied when listing bucket`** (IAM user couldn’t see objects in the bucket):   
 
-  &#8728; Added `s3:GetObject` permission to object-level ARN in bucket policy.
-  
-**`Over-restrictive bucket policy`** (Combined IAM and bucket policy blocked access):
+--> Added `s3:ListBucket` permission to the policy.
 
-  &#8728;   Carefully tuned policy to allow only secure access with encryption enabled.
-  
-**`Credential Confusion`** (Accidentally tried using root credentials in testing script):
+                                                                                         
+**&#8728; `Object not accessible via URL`** (Even after upload, public access was denied):       
 
-  &#8728;   Used IAM user credentials as per best practices. 
+--> Added `s3:GetObject` permission to object-level ARN in bucket policy.
+
+                                                                                         
+**&#8728; `Over-restrictive bucket policy`** (Combined IAM and bucket policy blocked access):    
+
+--> Carefully tuned policy to allow only secure access with encryption enabled.
+
+                                                                                         
+**&#8728; `Credential Confusion`** (Accidentally tried using root credentials in testing script):
+
+--> Used IAM user credentials as per best practices. 
 
 ---
 
